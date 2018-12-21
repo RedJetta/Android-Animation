@@ -1,31 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
-
-    <ImageView
-        android:id="@+id/sky"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:contentDescription="@string/sky"
-        android:src="@drawable/sky" />
+    tools:layout_editor_absoluteY="81dp">
 
     <ImageView
         android:id="@+id/sun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
         android:contentDescription="@string/sun"
         android:scaleType="fitCenter"
-        android:src="@drawable/sun" />
+        android:src="@drawable/sun"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/grass"
-        android:layout_width="fill_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
-        android:contentDescription="@string/grass"
-        android:src="@drawable/grass" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+
+
+
+
